@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#D51F1E"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/left"></ImageView>
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="370dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom"
+                    android:drawableStart="@drawable/search"
+                    android:drawableEnd="@drawable/down"
+                    android:hint=" Tìm nhà hàng, đặt chỗ, khuyến mãi...       TP.HCM"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-6dp"
+                    android:gravity="center"
+                    android:text="Đặt bàn"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-17dp"
+                    android:src="@drawable/right"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-67dp"
+                    android:gravity="center"
+                    android:text="Đặt chỗ cho Hôm nay 22:45, 2 người lớn"
+                    android:textColor="#fff"
+                    android:textSize="15dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/h1"></ImageView>
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:orientation="horizontal">-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/docquyen"-->
+            <!--                    android:layout_marginTop="5dp"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/buffet"-->
+            <!--                    android:layout_marginTop="5dp"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/deal"-->
+            <!--                    android:layout_marginTop="5dp"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/sushi"-->
+            <!--                    android:layout_marginTop="5dp"/>-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="80dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/docquyen"-->
+            <!--                    android:layout_marginTop="5dp"/>-->
+            <!--            </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Ưu đãi đặc biệt"
+            android:textColor="#131313"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/list_uudai"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Bộ sưu tập"
+            android:textColor="#131313"
+            android:textSize="15dp"
+            android:textStyle="bold">></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="6dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="198dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/h1"></ImageView>
+
+                <ImageView
+                    android:layout_width="198dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/h1"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="198dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="Chỉ 11.000 cho món Đặc biệt... "
+                    android:textSize="14dp"></TextView>
+
+                <TextView
+                    android:layout_width="198dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="6dp"
+                    android:text="Chỉ 11.000 cho món Đặc biệt... "
+                    android:textSize="14dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/h1"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="102dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Nổi Bật"
+                    android:textColor="#131313"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="102dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Đặt nhiều"
+                    android:textColor="#131313"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="102dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Mới"
+                    android:textColor="#131313"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="102dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Gần tôi"
+                    android:textColor="#131313"
+                    android:textSize="15dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

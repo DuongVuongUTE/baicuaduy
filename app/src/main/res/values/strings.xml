@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">foody</string>
+    <string-array name="description">
+        <item>Deal mới</item>
+        <item>Độc quyền</item>
+        <item>Buffet</item>
+        <item>Sushi</item>
+        <item>Sinh nhật</item>
+        <item>Hải sản</item>
+        <item>Pizza</item>
+    </string-array>
+</resources>
